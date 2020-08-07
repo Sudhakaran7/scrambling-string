@@ -1,0 +1,56 @@
+Given two strings S1,S2 we have to consider the given S1 as a binary tree by partitioning it to two non-empty substrings recursively.
+   abcde
+   /    \
+  ab     cde
+ / \    /  \
+a   b  c   de
+           / \
+          e   d
+To scramble the string, we may choose any non-leaf node and swap its two children.
+For example, if we choose the node "ab" and swap its two children, it produces a scrambled string "abcde".
+
+    bacde
+   /    \
+  ba    cde
+ / \    /  \
+b   a  c   de
+           / \
+          d   e
+We say that "bacde" is a scrambled string of "abcde".
+Given two strings S1 and S2 of the same length, determine if S2 is a scrambled string of S1.
+
+Input description:
+S1 S2 two strings
+
+Output Description:
+True if S2 is a scramble string of S1 or False
+
+Sample Input:
+guvi ugvi
+
+Sample Output:
+True
+
+Sample Input:
+world dworld
+
+Sample Output:
+False
+
+Sample Input:
+xman nxan
+
+Sample Output:
+False
+
+Sample Input:
+coding ginodc
+
+Sample Output:
+True
+
+Sample Input:
+google ledoog
+
+Sample Output:
+False
